@@ -50,3 +50,19 @@ export interface ModalProps {
   children: React.ReactNode;
   size?: 'sm' | 'md' | 'lg' | 'xl';
 }
+
+export interface Product {
+  id: string;
+  name: string;
+  price: number;
+  description: string;
+  category: string;
+  stock: number;
+  createdAt: string;
+  complexScore?: number;
+}
+
+export interface Stats {
+  totalItems: number;
+  totalValue: number;
+}
